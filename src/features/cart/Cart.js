@@ -8,6 +8,7 @@ import {
 import { Fragment} from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
+import { Link } from 'react-router-dom';
 
 const products = [
   {
@@ -92,6 +93,7 @@ export default function Counter() {
                         <p>$262.00</p>
                       </div>
                       <p className="mt-0.5 text-sm text-gray-500">Shipping and taxes calculated at checkout.</p>
+                      <Link to="/checkout">
                       <div className="mt-6">
                         <a
                           href="#"
@@ -100,6 +102,7 @@ export default function Counter() {
                           Checkout
                         </a>
                       </div>
+                      </Link>
                       <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
                         <p>
                           or 
